@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <title>Assignment 13</title>
+    </head>
+    <body>
+        <div class="container">
+            <form onsubmit="return false">
+                <div class="date">
+                    <div class="day input-feild">
+                        <label for="day">DAY</label>
+                        <input type="text" id="day" required placeholder="DD"
+                            class="day-input" maxlength="2" max="31">
+                        <p class="error">must be a valid day</p>
+                    </div>
+                    <div class="month input-feild">
+                        <label for="month">MONTH</label>
+                        <input type="number" id="month" required
+                            placeholder="MM"
+                            class="month-input" maxlength="2" max="12">
+                        <p class="error">must be a valid month</p>
+                    </div>
+                    <div class="year input-feild">
+                        <label for="year">YEAR</label>
+                        <input type="number" id="year" required
+                            placeholder="YYYY"
+                            class="year-input" maxlength="4" max>
+                        <p class="error">must be in the past</p>
+                    </div>
+                    <div>
+                        <button class="submit" type="submit"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="46"
+                                height="44" viewBox="0 0 46 44"><g fill="none"
+                                    stroke="#FFF" stroke-width="2"><path
+                                        d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44" /></g></svg></input>
+                    </div>
+                </div>
+            </form>
+            <div class="date-counter">
+                <div class="output">
+                    <h3 class="year-count">- -</h3>
+                    <h2>years</h2>
+                </div>
+                <div class="output">
+                    <h3 class="month-count">- -</h3>
+                    <h2>months</h>
+                </div>
+                <div class="output">
+                    <h3 class="day-count">- -</h3>
+                    <h2>days</h2>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="./script.js"></script>
+</html>
